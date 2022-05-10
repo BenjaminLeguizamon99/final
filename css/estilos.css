@@ -201,4 +201,8 @@ form {
     .cards-responsive { /*Le doy un poco de espacio entre card y card en la pagina de sobre-mi*/
         gap: 1em;
     }
+    .footer-home {
+        position: absolute;
+        bottom: 0;
+    }
 }

@@ -205,4 +205,9 @@ form {
         position: absolute;
         bottom: 0;
     }
+    .contenedor-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

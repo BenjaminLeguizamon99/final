@@ -213,6 +213,6 @@ form {
     .contenedor-padre {
         height: 70vh;
         justify-content: center;
-        align-items: flex-start;
+        align-items: space-around;
     }
 }

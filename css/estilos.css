@@ -211,7 +211,7 @@ form {
         align-items: center;
     }
     .contenedor-padre {
-        height: 90vh;
+        height: 70vh;
         justify-content: center;
         align-items: flex-start;
     }

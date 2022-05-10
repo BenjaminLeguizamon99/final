@@ -1,0 +1,204 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+.color-fondo { /*Esta clase es para darle el color de fondo a todas las paginas menos a la principal que tiene un background image*/
+    background-image: linear-gradient(to bottom, #0f141a, #182029, #212c39, #2a384a, #33455b);
+    background-repeat: no-repeat;
+}
+.home-altura { /*Esta clase es para poner el background image en la pagina principal*/
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../imagenes/living.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elemento-barra:hover { /*Esta clase es para el efecto a la barra de navegacion*/
+    transform: scale(1.1, 1.1);
+    transition: .5s;
+}
+.titulo-principal { /*Color de todos los titulos*/
+    color: #d7d9ce;
+}
+.texto-color { /*Color de todos los textos*/
+    color: #d7d9ce;
+}
+.contenedor-padre { /*Hice este contenedor para poder centrar verticalmente el cuadro con texto de la pagina principal*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.contenedor-principal { /*Esta contenedor es el que se ve en la pagina principal*/
+    background-color: rgba(0,0,0,0.65);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.boton-home {
+    text-decoration: none;
+    padding: 1em;
+    width: 10em;
+    border-radius: 10px;
+    color: #1c1f22;
+    background-color: #679289;
+}
+.boton-home:hover {
+    transform: scale(1.1, 1.1);
+    transition: .5s;
+    color: #1f2232;
+}
+.contenedor-boton {
+    padding-bottom: 2em;
+}
+.footer-home { /*Hice una clase solo para el footer de la pagina principal para pegarlo abajo de todo y se vea bien, sino quedaba muy alto y el espacio que ocupaba era mucho*/
+    position: absolute;
+    bottom: 0;
+}
+footer p {
+    color: #d7d9ce;
+}
+.logo {
+    width: 20%;
+    height: 20%;
+    
+}
+.logo:hover {
+    transform: scale(1.15, 1.15);
+    transition: .5s;
+}
+.fondo-servicios-modeling { /*Clase para el background image de modeling dentro de la pagina de servicios*/
+    background-image: url(../imagenes/pexels-cottonbro-4069292.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    margin: 10px;
+}
+.titulo-servicios {
+    color: #d7d9ce;
+    visibility: hidden;
+    text-decoration: none;
+}
+.leyenda-servicios {
+    text-decoration: none;
+}
+.fondo-servicios-modeling:hover .titulo-servicios { /*Aca lo que hace es que se visualiza el texto cuando se pasa el mouse por encima de la imagen*/
+    visibility: visible;
+    transition: 1s;
+}
+.fondo-servicios-rendering { /*Clase para el background image de rendering dentro de la pagina de servicios*/
+    background-image: url(../imagenes/rendering.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+.fondo-servicios-rendering:hover .titulo-servicios {
+    visibility: visible;
+}
+.texto-render {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+.servicios-render-texto { /* Esta clase es para encerrar el texto con un borde*/
+    border: solid 1px #d7d9ce;
+    padding: 1em;
+    border-radius: 1em;
+}
+.texto-modeling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+.servicio-modeling-texto { /* Esta clase es para encerrar el texto con un borde*/
+    border: solid 1px #d7d9ce;
+    padding: 1em;
+    border-radius: 1em;
+}
+.galeria-grid { /*Defino las columnas con grid para la galeria*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+.galeria-grid img {
+    margin: auto;
+}
+.galeria-grid img:hover {
+    transform: scale(1.04, 1.04);
+    transition: .5s;
+}
+.galeria-grid img:nth-child(5) { /*Hago que ciertas imagenes ocupen mas lugar y se destaquen del resto*/
+    grid-column: 1 / 3;
+}
+.galeria-grid img:nth-child(6) {
+    grid-column: 3 / 5;
+}
+.galeria-grid img:nth-child(9) {
+    grid-column: 3 / 5
+}
+
+.boton-contacto {
+    background-color: #121820;
+    color: #d7d9ce;
+    padding: .5em;
+    border: none;
+}
+.boton-contacto:hover {
+    transform: scale(1.1, 1.1);
+    transition: .5s;
+}
+form {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-area-posicion { /*Clase que hice para que el textarea ocupe el mismo ancho que el form*/
+    display: flex;
+    justify-content: center;
+    width: 95.5%;
+}
+.boton-contacto {
+    width: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1em;
+}
+.boton-contacto-posicion {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 950px){ /*Hago esta media query para centrar el titulo que dice MODELING 3D Y RENDERING cuando aparece el menu hamnurguesa*/
+    
+    .titulo-barra-navegacion {
+        text-align: center;
+    }
+    
+   .footer-responsive {
+       text-align: center;
+   }
+   .galeria-grid {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+   }
+    .titulo-servicios { /*Con esta clase lo que hago es "desactivar el hover" y que el texto de las cards se vean siempre*/
+        visibility: visible;
+    }
+    
+    .cards-responsive { /*Le doy un poco de espacio entre card y card en la pagina de sobre-mi*/
+        gap: 1em;
+    }
+}

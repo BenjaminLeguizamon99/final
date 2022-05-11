@@ -8,6 +8,7 @@
     background-image: linear-gradient(to bottom, #0f141a, #182029, #212c39, #2a384a, #33455b);
     background-repeat: no-repeat;
 }
+
 .home-altura { /*Esta clase es para poner el background image en la pagina principal*/
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../imagenes/living.jpg);
@@ -61,10 +62,13 @@ footer p {
     color: #d7d9ce;
 }
 .logo {
-    width: 20%;
-    height: 20%;
-    
+    text-decoration: none;
+    text-align: center;
 }
+.link-footer {
+    text-decoration: none;
+}
+
 .logo:hover {
     transform: scale(1.15, 1.15);
     transition: .5s;
@@ -110,7 +114,7 @@ footer p {
 .servicios-render-texto { /* Esta clase es para encerrar el texto con un borde*/
     border: solid 1px #d7d9ce;
     padding: 1em;
-    border-radius: 1em;
+    border-radius: 7px;
 }
 .texto-modeling{
     display: flex;
@@ -123,7 +127,7 @@ footer p {
 .servicio-modeling-texto { /* Esta clase es para encerrar el texto con un borde*/
     border: solid 1px #d7d9ce;
     padding: 1em;
-    border-radius: 1em;
+    border-radius: 7px;
 }
 .galeria-grid { /*Defino las columnas con grid para la galeria*/
     display: grid;
@@ -182,6 +186,10 @@ form {
 
 @media screen and (max-width: 950px){ /*Hago esta media query para centrar el titulo que dice MODELING 3D Y RENDERING cuando aparece el menu hamnurguesa*/
     
+    * {
+        height: auto;
+    }
+
     .titulo-barra-navegacion {
         text-align: center;
     }
@@ -213,6 +221,6 @@ form {
     .contenedor-padre {
         height: 70vh;
         justify-content: center;
-        align-items: space-around;
+        align-items: center;
     }
 }
